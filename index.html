@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+      body {
+        width: 100vw;
+        min-height: 100vh;
+        max-height: 100vh;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      webview {
+        width: 100vw;
+        flex: 1;
+        outline: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <webview src="http://www.newgrounds.com/portal/view/581946" plugins></webview>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
